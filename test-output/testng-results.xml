@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-04T23:51:16 IST" name="Suite" finished-at="2024-02-04T23:51:16 IST" duration-ms="0">
+    <groups>
+      <group name="sanity,regression">
+        <method signature="TC02_MmtResultPageTest.selectSUVTest()[pri:7, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="selectSUVTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC02_MmtResultPageTest.selectLowestPriceTest()[pri:8, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="selectLowestPriceTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC02_MmtResultPageTest.selectGiftTest()[pri:9, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="selectGiftTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC04_SenderDetailsTest.goToHotelsTest()[pri:13, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="goToHotelsTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC04_SenderDetailsTest.getNumberOfPeopleTest()[pri:14, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="getNumberOfPeopleTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC02_MmtResultPageTest.selectSUVTest()[pri:7, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="selectSUVTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC02_MmtResultPageTest.selectLowestPriceTest()[pri:8, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="selectLowestPriceTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC02_MmtResultPageTest.selectGiftTest()[pri:9, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="selectGiftTest" class="testCases.TC02_MmtResultPageTest"/>
+        <method signature="TC04_SenderDetailsTest.goToHotelsTest()[pri:13, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="goToHotelsTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC04_SenderDetailsTest.getNumberOfPeopleTest()[pri:14, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="getNumberOfPeopleTest" class="testCases.TC04_SenderDetailsTest"/>
+      </group> <!-- sanity,regression -->
+      <group name="regression">
+        <method signature="TC03_GiftCardsTest.selectWeddingCardTest()[pri:10, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="selectWeddingCardTest" class="testCases.TC03_GiftCardsTest"/>
+        <method signature="TC04_SenderDetailsTest.inputSenderDetailsTest()[pri:11, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="inputSenderDetailsTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC04_SenderDetailsTest.getAlertMsgTest()[pri:12, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="getAlertMsgTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC03_GiftCardsTest.selectWeddingCardTest()[pri:10, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="selectWeddingCardTest" class="testCases.TC03_GiftCardsTest"/>
+        <method signature="TC04_SenderDetailsTest.inputSenderDetailsTest()[pri:11, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="inputSenderDetailsTest" class="testCases.TC04_SenderDetailsTest"/>
+        <method signature="TC04_SenderDetailsTest.getAlertMsgTest()[pri:12, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="getAlertMsgTest" class="testCases.TC04_SenderDetailsTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC01_MmtHomeTest.clickOnCabsTest()[pri:1, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="clickOnCabsTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputfromCityTest()[pri:2, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="inputfromCityTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputToCityTest()[pri:3, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="inputToCityTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputDateTest()[pri:4, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="inputDateTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputTimeTest()[pri:5, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="inputTimeTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.clickOnSearchTest()[pri:6, instance:testCases.TC04_SenderDetailsTest@8519cb4]" name="clickOnSearchTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.clickOnCabsTest()[pri:1, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="clickOnCabsTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputfromCityTest()[pri:2, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="inputfromCityTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputToCityTest()[pri:3, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="inputToCityTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputDateTest()[pri:4, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="inputDateTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.inputTimeTest()[pri:5, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="inputTimeTest" class="testCases.TC01_MmtHomeTest"/>
+        <method signature="TC01_MmtHomeTest.clickOnSearchTest()[pri:6, instance:testCases.TC04_SenderDetailsTest@43df23d3]" name="clickOnSearchTest" class="testCases.TC01_MmtHomeTest"/>
+      </group> <!-- sanity -->
+    </groups>
+  </suite> <!-- Suite -->
+</testng-results>

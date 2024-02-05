@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="os" value="windows"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="testCases.TC04_SenderDetailsTest">
+        <methods>
+          <include name="selectLowestPriceTest"/>
+          <include name="selectGiftTest"/>
+          <include name="tearDown"/>
+          <include name="inputDateTest"/>
+          <include name="clickOnCabsTest"/>
+          <include name="getNumberOfPeopleTest"/>
+          <include name="selectSUVTest"/>
+          <include name="inputToCityTest"/>
+          <include name="inputTimeTest"/>
+          <include name="goToHotelsTest"/>
+          <include name="selectWeddingCardTest"/>
+          <include name="clickOnSearchTest"/>
+          <include name="setup"/>
+          <include name="inputfromCityTest"/>
+          <include name="inputSenderDetailsTest"/>
+          <include name="getAlertMsgTest"/>
+        </methods>
+      </class> <!-- testCases.TC04_SenderDetailsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
