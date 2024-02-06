@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import testBase.BaseClass;
+import utilities.ExcelUtils;
 
 
 public class OB4_SenderDetails extends OB2_MmtResultPage{
@@ -18,6 +19,7 @@ public class OB4_SenderDetails extends OB2_MmtResultPage{
 		
 	}
 	
+	String filePath=System.getProperty("user.dir")+"/testData/HackathonData.xlsx";
 	
 	
 	//locators
@@ -70,10 +72,17 @@ public class OB4_SenderDetails extends OB2_MmtResultPage{
 	public void getAlertMsg() throws IOException
 	{
 		String user = "Recipient's alert: ";
+		
+		int j =1;
+		
 		for(WebElement alert:alertsEle)
 		{
 			String alertStr = alert.getText();
 			System.out.println(user+alertStr);
+			
+			ExcelUtils.setcelldata(filePath, "Sheet1", j, 2, user+alertStr);
+			j++;
+			
 			user="Sender's alert: ";
 		}
 		screenShot("MyScreenshots/7.AlertMessage");
@@ -89,17 +98,20 @@ public class OB4_SenderDetails extends OB2_MmtResultPage{
 	}
 	
 	public void getNumberOfPeople() throws IOException, InterruptedException
-	{
+	{	String adult="";
 		fluentWait(adultsBox);
 		adultsBox.click();
 		adultdropBox.click();
 		System.out.println("------------------------------------");
 		System.out.println("Displaying number of adults");
 		System.out.println("------------------------------------");
-		
+		int i=1;
 		for(WebElement adultNo:noOfAdultList)
-		{
-			System.out.print(adultNo.getText()+",");
+		{	adult=adultNo.getText();
+			ExcelUtils.setcelldata(filePath, "Sheet1", i, 3, adult);
+			System.out.print(adult+",");
+			i++;
+			
 		}
 	
 		screenShot("MyScreenshots/9.NumberOfPeople");

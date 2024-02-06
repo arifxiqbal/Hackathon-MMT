@@ -16,6 +16,7 @@ public class TC03_GiftCardsTest extends TC02_MmtResultPageTest{
 	{
 		OB3_GiftCards gc = new OB3_GiftCards(driver);
 		gc.selectWeddingCard();
+		logger.info("Selected Wedding GiftCard.");
 		String wedCard = driver.findElement(By.xpath("//li[@class='current']/a")).getText();
 		Assert.assertEquals(wedCard, "Wedding Gift Card");
 	}

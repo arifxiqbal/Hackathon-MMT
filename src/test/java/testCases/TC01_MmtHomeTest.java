@@ -18,6 +18,7 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.clickOnCabs();
+		logger.info("Clicked on Cabs.");
 	}
 	
 	@Test(priority=2,groups = {"sanity"})
@@ -25,6 +26,7 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.inputFromCity(p.getProperty("fromCity"));
+		logger.info("Entered 'From' city.");
 	}
 	
 	@Test(priority=3,groups = {"sanity"})
@@ -32,6 +34,7 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.inputToCity(p.getProperty("toCity"));
+		logger.info("Entered 'To' City.");
 	}
 	
 	@Test(priority=4,groups = {"sanity"})
@@ -39,6 +42,7 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.inputDate();
+		logger.info("Entered date.");
 	}
 	
 	@Test(priority=5,groups = {"sanity"})
@@ -46,6 +50,7 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.inputTime();
+		logger.info("Entered Time.");
 
 	}
 	
@@ -54,7 +59,9 @@ public class TC01_MmtHomeTest extends BaseClass{
 	{
 		OB1_MmtHome mmt = new OB1_MmtHome(driver);
 		mmt.clickOnSearch();
+		logger.info("Clicked on Search after filling the details.");
 		Assert.assertEquals(driver.getTitle(), "Cabs");
+		
 	}
 	
 	

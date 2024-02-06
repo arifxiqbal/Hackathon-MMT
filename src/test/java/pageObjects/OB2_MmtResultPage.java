@@ -7,12 +7,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import utilities.ExcelUtils;
+
 public class OB2_MmtResultPage extends OB1_MmtHome{
 
 	public OB2_MmtResultPage(WebDriver driver) {
 		super(driver);
 		
 	}
+	
+	String filePath=System.getProperty("user.dir")+"/testData/HackathonData.xlsx";
 	
 	
 	//locators
@@ -42,6 +46,7 @@ public class OB2_MmtResultPage extends OB1_MmtHome{
 		System.out.println("------------------------------------");
 		System.out.println("Lowest price available: "+lowestPriceEle.getText());
 		System.out.println("------------------------------------");
+		ExcelUtils.setcelldata(filePath, "Sheet1", 1, 0, lowestPriceEle.getText());
 		screenShot("MyScreenshots/3.LowestPrice");
 		
 	}
