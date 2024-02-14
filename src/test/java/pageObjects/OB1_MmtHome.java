@@ -25,7 +25,7 @@ public class OB1_MmtHome extends BasePage{
 	@FindBy(xpath="//input[@title='To']") WebElement toInputBoxEle;
 	@FindBy(xpath="//span[starts-with(text(),'Manali, Himachal Pradesh, India')]") WebElement ManaliEle;
 	
-//	@FindBy(xpath="(//div[contains(text(),'23')])[2]") WebElement feb23;
+
 	@FindBy(xpath="//div[@class='DayPicker-NavBar']/span[2]") WebElement nextmonthEle;
 	@FindBy(xpath="//div[contains(@aria-label,'Sun Mar 31 2024')]") WebElement march31Ele;;
 	
@@ -36,6 +36,12 @@ public class OB1_MmtHome extends BasePage{
 	
 	@FindBy(xpath="//p[@class='makeFlex vrtlCenter']/a") WebElement searchBttnEle;
 	
+	
+	//ad handle
+	@FindBy(xpath="//a[@class='close']") WebElement closeAd;
+	
+	@FindBy(xpath="//iframe[@title='notification-frame-~10cb5088a']") WebElement adFrame;
+	
 
 	
 	
@@ -45,14 +51,21 @@ public class OB1_MmtHome extends BasePage{
 	
 	public void clickOnCabs()
 	{
+		try {
+		fluentWait(adFrame);		
+		driver.switchTo().frame(adFrame);		
+		closeAd.click();		
+		}catch(Exception e) {}
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();", cabsButtonEle);
+		js.executeScript("arguments[0].click();", cabsButtonEle);	
+		
+
 	}
 	
 	public void inputFromCity(String fromCity)
 	{
-		frombuttonEle.click();
-		fromInputBoxEle.sendKeys(fromCity);
+		frombuttonEle.click();		
+		fromInputBoxEle.sendKeys(fromCity);		
 		fromInputBoxEle.sendKeys(Keys.RETURN);
 		fluentWait(DelhiEle);
 		DelhiEle.click();
@@ -67,12 +80,11 @@ public class OB1_MmtHome extends BasePage{
 		fluentWait(ManaliEle);
 		ManaliEle.click();
 		
+		
 	}
 	
 	public void inputDate()
 	{
-//		fluentWait(feb23);
-//		feb23.click();
 		fluentWait(nextmonthEle);
 		nextmonthEle.click();
 		fluentWait(march31Ele);
@@ -83,11 +95,17 @@ public class OB1_MmtHome extends BasePage{
 	public void inputTime() throws IOException
 	{
 		fluentWait(hourEle);
-		hourEle.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		js.executeScript("arguments[0].click();", hourEle);
+//		hourEle.click();
 		fluentWait(minEle);
-		minEle.click();
-		amEle.click();
-		applyEle.click();
+		js.executeScript("arguments[0].click();", minEle);
+//		minEle.click();
+		js.executeScript("arguments[0].click();", amEle);
+//		amEle.click();
+		js.executeScript("arguments[0].click();", applyEle);
+//		applyEle.click();
 		screenShot("MyScreenshots/1.TripDetails");
 	}
 	

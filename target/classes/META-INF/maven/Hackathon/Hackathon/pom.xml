@@ -4,6 +4,7 @@
   <artifactId>Hackathon</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  
   <build>
   
   	<pluginManagement>
@@ -117,7 +118,6 @@
     <scope>test</scope>
 </dependency>
 
-  
 
   
   </dependencies>

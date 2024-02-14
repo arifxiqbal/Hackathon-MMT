@@ -23,7 +23,9 @@ public class OB2_MmtResultPage extends OB1_MmtHome{
 	@FindBy(xpath="//span[@class='checkmarkOuter ']/label[contains(text(),'SUV')]") WebElement suvEle;
 	@FindBy(xpath="(//p[@class='font28 latoBlack blackText '])[1]") WebElement lowestPriceEle;
 	@FindBy(xpath="//span[@class='chNavText']") WebElement moreEle;
-	@FindBy(xpath="(//a[@class='appendBottom5 blackText'])[3]") WebElement giftCardEle;
+	@FindBy(xpath="(//a[@class='appendBottom5 blackText'])[2]") WebElement giftCardEle;
+	
+//	@FindBy(xpath="(//a[contains(text(),'')])[12]") WebElement giftCardEle;
 	
 	
 	

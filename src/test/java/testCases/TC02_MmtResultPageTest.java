@@ -10,7 +10,7 @@ import pageObjects.OB2_MmtResultPage;
 public class TC02_MmtResultPageTest extends TC01_MmtHomeTest{
 
 	
-	@Test(priority=7,groups = {"sanity,regression"})
+	@Test(priority=7,groups = {"regression"})
 	public void selectSUVTest() throws IOException
 	{
 		OB2_MmtResultPage rp = new OB2_MmtResultPage(driver);
@@ -18,7 +18,7 @@ public class TC02_MmtResultPageTest extends TC01_MmtHomeTest{
 		logger.info("Selected SUV.");
 	}
 	
-	@Test(priority=8,groups = {"sanity,regression"})
+	@Test(priority=8,groups = {"smoke,regression"})
 	public void selectLowestPriceTest() throws IOException
 	{
 		OB2_MmtResultPage rp = new OB2_MmtResultPage(driver);
@@ -27,7 +27,7 @@ public class TC02_MmtResultPageTest extends TC01_MmtHomeTest{
 
 	}
 	
-	@Test(priority=9,groups = {"sanity,regression"})
+	@Test(priority=9,groups = {"regression"})
 	public void selectGiftTest() throws IOException
 	{
 		OB2_MmtResultPage rp = new OB2_MmtResultPage(driver);

@@ -1,0 +1,1236 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Make My Trip Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Make My Trip Functional Testing</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 14, 2024 10:28:19 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">smoke,sanity</a><a class="dropdown-item" href="#">smoke,regression</a><a class="dropdown-item" href="#">sanity</a><a class="dropdown-item" href="#">regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag="sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:32 AM</span> / <span>00:00:00:363</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:32 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:32 AM</span>
+<span class='badge badge-default'>00:00:00:363</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\clickOnCabsTest_20240214102832.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\clickOnCabsTest_20240214102832.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:28:32 AM</td>
+        <td>
+          clickOnCabsTest got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag="smoke,sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:33 AM</span> / <span>00:00:00:214</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:33 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:33 AM</span>
+<span class='badge badge-default'>00:00:00:214</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputfromCityTest_20240214102833.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputfromCityTest_20240214102833.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:28:33 AM</td>
+        <td>
+          inputfromCityTest got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag="smoke,sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:34 AM</span> / <span>00:00:00:294</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:34 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:34 AM</span>
+<span class='badge badge-default'>00:00:00:294</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputToCityTest_20240214102834.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputToCityTest_20240214102834.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:28:34 AM</td>
+        <td>
+          inputToCityTest got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag="smoke,sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:35 AM</span> / <span>00:00:00:211</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:35 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:35 AM</span>
+<span class='badge badge-default'>00:00:00:211</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputDateTest_20240214102835.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputDateTest_20240214102835.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:28:35 AM</td>
+        <td>
+          inputDateTest got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="19"
+          author=""
+          tag="smoke,sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:36 AM</span> / <span>00:00:00:176</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:36 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:36 AM</span>
+<span class='badge badge-default'>00:00:00:176</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputTimeTest_20240214102836.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputTimeTest_20240214102836.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:28:36 AM</td>
+        <td>
+          inputTimeTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:28:36 AM</td>
+        <td>
+          element click intercepted: Element is not clickable at point (970, 538)
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, clickElement {id=0FADACCD4660E628C1C904BD4F319A8A_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d1b52fa7554ff4074194a95e98c3f4ae)] -> xpath: //span[contains(text(),'06  Hr')]]
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag="sanity"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:37 AM</span> / <span>00:00:00:200</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:37 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:37 AM</span>
+<span class='badge badge-default'>00:00:00:200</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">sanity</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\clickOnSearchTest_20240214102837.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\clickOnSearchTest_20240214102837.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:28:37 AM</td>
+        <td>
+          clickOnSearchTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:28:37 AM</td>
+        <td>
+          element click intercepted: Element <a data-cy="OutstationOneWayWidget_64" href="" class="primaryBtn font24 latoBold widget...Btn">Search</a> is not clickable at point (608, 367). Other element would receive the click: <div data-cy="OutstationOneWayWidget_53" class="hsBackDrop"></div>
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, clickElement {id=0FADACCD4660E628C1C904BD4F319A8A_element_82}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d1b52fa7554ff4074194a95e98c3f4ae)] -> xpath: //p[@class='makeFlex vrtlCenter']/a]
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="21"
+          author=""
+          tag="regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:47 AM</span> / <span>00:00:00:183</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:47 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:47 AM</span>
+<span class='badge badge-default'>00:00:00:183</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectSUVTest_20240214102847.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectSUVTest_20240214102847.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:28:47 AM</td>
+        <td>
+          selectSUVTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:28:47 AM</td>
+        <td>
+          no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='checkmarkOuter ']/label[contains(text(),'SUV')]"}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, findElement {using=xpath, value=//span[@class='checkmarkOuter ']/label[contains(text(),'SUV')]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="22"
+          author=""
+          tag="smoke,regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:28:57 AM</span> / <span>00:00:00:178</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:28:57 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:28:58 AM</span>
+<span class='badge badge-default'>00:00:00:178</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,regression</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectLowestPriceTest_20240214102857.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectLowestPriceTest_20240214102857.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:28:57 AM</td>
+        <td>
+          selectLowestPriceTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:28:57 AM</td>
+        <td>
+          no such element: Unable to locate element: {"method":"xpath","selector":"(//p[@class='font28 latoBlack blackText '])[1]"}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, findElement {using=xpath, value=(//p[@class='font28 latoBlack blackText '])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="23"
+          author=""
+          tag="regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:29:08 AM</span> / <span>00:00:00:190</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:29:08 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:29:08 AM</span>
+<span class='badge badge-default'>00:00:00:190</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectGiftTest_20240214102908.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectGiftTest_20240214102908.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:29:08 AM</td>
+        <td>
+          selectGiftTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:29:08 AM</td>
+        <td>
+          no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='chNavText']"}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, findElement {using=xpath, value=//span[@class='chNavText']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag="regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:29:18 AM</span> / <span>00:00:00:191</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:29:18 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:29:18 AM</span>
+<span class='badge badge-default'>00:00:00:191</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectWeddingCardTest_20240214102918.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\selectWeddingCardTest_20240214102918.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:29:18 AM</td>
+        <td>
+          selectWeddingCardTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:29:18 AM</td>
+        <td>
+          no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='card__data'])[1]"}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, findElement {using=xpath, value=(//div[@class='card__data'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag="regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:29:28 AM</span> / <span>00:00:00:221</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:29:28 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:29:28 AM</span>
+<span class='badge badge-default'>00:00:00:221</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span></div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputSenderandrecipientsDetailsTest_20240214102928.png' src="C:\Users\2303452\eclipse-workspace\Hackathon\screenshots\inputSenderandrecipientsDetailsTest_20240214102928.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:29:28 AM</td>
+        <td>
+          inputSenderandrecipientsDetailsTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:29:28 AM</td>
+        <td>
+          no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='deliver__wrap'])[1]//li[2]"}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, findElement {using=xpath, value=(//div[@class='deliver__wrap'])[1]//li[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="26"
+          author=""
+          tag="smoke,regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:29:36 AM</span> / <span>00:00:00:000</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:29:36 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:29:36 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:29:36 AM</td>
+        <td>
+          getAlertMsgTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:29:36 AM</td>
+        <td>
+          no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="27"
+          author=""
+          tag="smoke,regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC04_SenderDetailsTest</p>
+            <p class="text-sm">
+              <span>10:29:36 AM</span> / <span>00:00:00:000</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testCases.TC04_SenderDetailsTest</h5>
+<span class='badge badge-success'>02.14.2024 10:29:36 AM</span>
+<span class='badge badge-danger'>02.14.2024 10:29:36 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">smoke,regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:29:36 AM</td>
+        <td>
+          getAlertMsgTest got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:29:36 AM</td>
+        <td>
+          no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d1b52fa7554ff4074194a95e98c3f4ae, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:63319}, msedge: {msedgedriverVersion: 121.0.2277.112 (c44bb51ada3..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63319/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1b52fa7554ff4074194a95e98c3f4ae
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">smoke,sanity</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke,sanity</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:28:33 AM</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:28:34 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:28:35 AM</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:28:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">smoke,regression</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke,regression</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:28:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:29:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:29:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">sanity</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:28:32 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:28:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:28:47 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:29:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:29:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:29:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>testCases.TC04_SenderDetailsTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 14, 2024 10:28:19 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 14, 2024 10:29:36 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>9</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='30%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='69%'><b>9</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='18%'><b>4</b> events passed</small></div>
+<div>
+<small data-tooltip='40%'><b>9</b> events failed,
+<b data-tooltip='%'>9</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"testCases.TC04_SenderDetailsTest":0.363,"testCases.TC04_SenderDetailsTest":0.214,"testCases.TC04_SenderDetailsTest":0.294,"testCases.TC04_SenderDetailsTest":0.211,"testCases.TC04_SenderDetailsTest":0.176,"testCases.TC04_SenderDetailsTest":0.2,"testCases.TC04_SenderDetailsTest":0.183,"testCases.TC04_SenderDetailsTest":0.178,"testCases.TC04_SenderDetailsTest":0.19,"testCases.TC04_SenderDetailsTest":0.191,"testCases.TC04_SenderDetailsTest":0.221,"testCases.TC04_SenderDetailsTest":0,"testCases.TC04_SenderDetailsTest":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>smoke,sanity</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>smoke,regression</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>sanity</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>regression</td>
+<td>0</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Application</td>
+<td>Make My Trip</td>
+</tr>
+<tr>
+<td>Module</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>Sub Module</td>
+<td>Customers</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>2303452</td>
+</tr>
+<tr>
+<td>Environemnt</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>windows</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>edge</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 9,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 4,
+failEvents: 9,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 9
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

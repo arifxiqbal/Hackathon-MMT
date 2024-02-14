@@ -18,7 +18,7 @@ public class TC04_SenderDetailsTest extends TC03_GiftCardsTest{
 	
 
 	
-	@Test(priority=12,groups = {"regression"})
+	@Test(priority=12,groups = {"smoke,regression"})
 	public void getAlertMsgTest() throws IOException
 	{
 		OB4_SenderDetails sd = new OB4_SenderDetails(driver);
@@ -26,7 +26,7 @@ public class TC04_SenderDetailsTest extends TC03_GiftCardsTest{
 		logger.info("Fetched Alert message.");
 	}
 	
-	@Test(priority=13,groups = {"sanity,regression"})
+	@Test(priority=13,groups = {"regression"})
 	public void goToHotelsTest() throws IOException
 	{
 		OB4_SenderDetails sd = new OB4_SenderDetails(driver);
@@ -34,7 +34,7 @@ public class TC04_SenderDetailsTest extends TC03_GiftCardsTest{
 		logger.info("Directed to Hotels page.");
 	}
 	
-	@Test(priority=14,groups = {"sanity,regression"})
+	@Test(priority=14,groups = {"smoke,regression"})
 	public void getNumberOfPeopleTest() throws IOException, InterruptedException
 	{
 		OB4_SenderDetails sd = new OB4_SenderDetails(driver);

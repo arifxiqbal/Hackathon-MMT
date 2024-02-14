@@ -1,6 +1,7 @@
 package pageObjects;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -106,14 +107,24 @@ public class OB4_SenderDetails extends OB2_MmtResultPage{
 		System.out.println("Displaying number of adults");
 		System.out.println("------------------------------------");
 		int i=1;
+		
+		ArrayList<String> adultnoList = new ArrayList<String>();
+		
 		for(WebElement adultNo:noOfAdultList)
-		{	adult=adultNo.getText();
+		{	
+			adult=adultNo.getText();
+		
 			ExcelUtils.setcelldata(filePath, "Sheet1", i, 3, adult);
-			System.out.print(adult+",");
+//			System.out.print(adult+",");
+			
+			adultnoList.add(adult);
+			
 			i++;
 			
 		}
-	
+		
+		System.out.println(adultnoList);
+		
 		screenShot("MyScreenshots/9.NumberOfPeople");
 	
 	}

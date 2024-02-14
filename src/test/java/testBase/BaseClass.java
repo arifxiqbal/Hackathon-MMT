@@ -32,7 +32,7 @@ public class BaseClass {
 	public Properties p;
 	
 	
-	@BeforeClass(groups= {"sanity","regression","master"})
+	@BeforeClass(groups= {"sanity","regression","master","smoke"})
 	@Parameters({"os", "browser"})
 	public void setup(String os, String br) throws InterruptedException, IOException 
 	{
@@ -94,7 +94,7 @@ public class BaseClass {
 		
 		driver.get("https://www.makemytrip.com");
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 	}
 	
 	

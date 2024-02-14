@@ -16,7 +16,9 @@
 		<run>
 			<include name="sanity" /> 
 			<include name="regression" />
-			<include name="sanity,regression" />
+			<include name="smoke" />
+			<include name="smoke,regression" />
+			<include name="smoke,sanity" />
 			<!--<include name="master" /> -->
 			<!-- <exclude name="" /> -->
 		</run>
