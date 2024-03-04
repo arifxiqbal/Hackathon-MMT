@@ -38,9 +38,9 @@ public class OB1_MmtHome extends BasePage{
 	
 	
 	//ad handle
-	@FindBy(xpath="//a[@class='close']") WebElement closeAd;
+	@FindBy(xpath="//a[@id='webklipper-publisher-widget-container-notification-close-div']") WebElement closeAd;
 	
-	@FindBy(xpath="//iframe[@title='notification-frame-~10cb5088a']") WebElement adFrame;
+	@FindBy(xpath="//iframe[@id='webklipper-publisher-widget-container-notification-frame']") WebElement adFrame;
 	
 
 	
@@ -85,8 +85,8 @@ public class OB1_MmtHome extends BasePage{
 	
 	public void inputDate()
 	{
-		fluentWait(nextmonthEle);
-		nextmonthEle.click();
+		// fluentWait(nextmonthEle);
+		// nextmonthEle.click();
 		fluentWait(march31Ele);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", march31Ele);
